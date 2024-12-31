@@ -1,7 +1,9 @@
 import mongoose from 'mongoose';
+import dotenv from 'dotenv'
+dotenv.config()
 
 const connectToDatabase = async (dbName) => {
-  const dbURI = `${process.env.URI}${dbName}`;
+  const dbURI = `${process.env.URI}/${dbName}`;
   try {
     const connection =  mongoose.connect(dbURI);
     console.log(`Connected to database: ${dbURI}`);

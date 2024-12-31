@@ -3,7 +3,7 @@ import Logout from '../Admin/Logout';
 import { AppContext } from '../../Utils/IsAdmin';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/shopLogo.jpg'
+import logo from '../../assets/Patan.png'
 const Header = () => {
   const navigate = useNavigate();
   const { isAuth } = useContext(AppContext);
@@ -25,8 +25,9 @@ const Header = () => {
           <Link
             to={'/'}
             className="md:text-3xl text-xl font-extrabold tracking-tight">
+            <span className="text-black">Bibek </span>
+            <span className="text-blue-700">Kumar </span>
             <span className="text-black">Kushwaha </span>
-            <span className="text-blue-700">VetHub</span>
           </Link>
           {/* Subtext */}
           {/* <p className="text-gray-600 text-lg sm:text-xl text-center">

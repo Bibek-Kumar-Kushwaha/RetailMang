@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/shopLogo.jpg'
+import logo from '../../assets/Patan.png'
 
 const Footer = () => {
   return (
@@ -16,12 +16,13 @@ const Footer = () => {
         </div>
         <div className="">
           <h1 className="md:text-3xl text-xl font-extrabold tracking-tight">
+            <span className="text-black">Bibek </span>
+            <span className="text-blue-700">Kumar </span>
             <span className="text-black">Kushwaha </span>
-            <span className="text-blue-700">VetHub</span>
           </h1>
-          <div className="font-bold text-purple-700 mt-1">+977 9862804223</div>
+          <div className="font-bold text-purple-700 mt-1">+977 9864067038</div>
           <div className="mt-1 text-sm text-gray-700">
-            © {new Date().getFullYear()} Kushwaha VetHub. All rights reserved.
+            © {new Date().getFullYear()} Bibek Kumar Kushwaha. All rights reserved.
           </div>
         </div>
       </div>

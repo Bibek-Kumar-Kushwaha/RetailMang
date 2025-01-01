@@ -56,7 +56,7 @@ const PrintInvoice = () => {
         // Add Header
         doc.setFontSize(16);
         doc.setFont("helvetica", "bold");
-        doc.text("Kushwaha VetHub", 105, 10, { align: "center" });
+        doc.text("Bibek Kuamr Kushwaha", 105, 10, { align: "center" });
         doc.setFontSize(12);
         doc.setFont("helvetica", "normal");
         doc.text("Godaita-5, Sarlahi", 105, 16, { align: "center" });
@@ -216,7 +216,7 @@ const PrintInvoice = () => {
                                 <body>
                                     <div class="container">
                                         <div class="header">
-                                            <h1>Kushwaha <span class="color"> VetHub </span></h1>
+                                            <h1>Bibek <span class="color"> Kushwaha </span></h1>
                                             <h2>Godaita-5, Sarlahi</h2>
                                         </div>
                         
@@ -294,7 +294,7 @@ const PrintInvoice = () => {
                 {/* Header */}
                 <div className="text-center mb-8">
                     <h1 className="text-4xl font-extrabold text-gray-800">
-                        Kushwaha <span className="text-blue-600">VetHub</span>
+                        Bibek <span className="text-blue-600">Kushwaha</span>
                     </h1>
                     <p className="text-sm text-gray-500">Godaita-5, Sarlahi</p>
                 </div>

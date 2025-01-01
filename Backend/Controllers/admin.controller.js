@@ -10,7 +10,7 @@ import { connectToDatabase, disconnectDb } from "../Utils/dbConnect.js";
 
 // Admin Register Controller
 const adminRegisterController = async (req, res) => {
-         disconnectDb()
+        await disconnectDb()
     try {
         const { name, phone, email, password, role } = req.body;
 
@@ -77,16 +77,13 @@ const adminRegisterController = async (req, res) => {
             res
         );
     } finally {
-        mongoose.disconnect().then(() => {
-            console.log("Disconnected from database.");
-        }).catch((err) => {
-            console.error("Error disconnecting from database:", err.message);
-        });
+        await disconnectDb();
     }
 };
 
 // Admin Login Controller
 const adminLoginController = async (req, res) => {
+   await disconnectDb()
     try {
         const { phone, password } = req.body;
 

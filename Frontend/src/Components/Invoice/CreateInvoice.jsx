@@ -190,7 +190,7 @@ const CreateInvoice = () => {
     <div className="p-6 bg-gray-100 font-semibold capitalize">
       {/* Header */}
       <div className="text-center mb-6">
-        <h1 className="text-3xl font-bold">Kushwaha VetHub</h1>
+        <h1 className="text-3xl font-bold">Bibek Kumar Kushwaha</h1>
         <h2 className="text-lg">Godaita-5, Sarlahi</h2>
       </div>
 

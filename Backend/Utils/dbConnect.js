@@ -3,9 +3,9 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const connectToDatabase = async (dbName) => {
-  const dbURI = `${process.env.URI}/${dbName}`;
+  const dbURI = `mongodb+srv://kushwahabibek9:VBYcWwXLl9fQbIpH@cluster0.bt94z.mongodb.net/${dbName}?retryWrites=true&w=majority`;
   try {
-    const connection =  mongoose.connect(dbURI);
+    const  connection = await  mongoose.connect(dbURI);
     console.log(`Connected to database: ${dbURI}`);
     return connection;
   } catch (error) {

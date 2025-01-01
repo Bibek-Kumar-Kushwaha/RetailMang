@@ -3,14 +3,14 @@ import DashboardLayout from '../../Layouts/DashboardLayout';
 
 const AdminDashboard = () => {
   const adminSections = [
-    {
-      name: 'Register As Admin',
-      link: '/signup',
-      bgColor: 'bg-blue-500',
-      hoverColor: 'bg-blue-600',
-      icon: 'add',
-      action: 'Add New Admin',
-    },
+    // {
+    //   name: 'Register As Admin',
+    //   link: '/signup',
+    //   bgColor: 'bg-blue-500',
+    //   hoverColor: 'bg-blue-600',
+    //   icon: 'add',
+    //   action: 'Add New Admin',
+    // },
     {
       name: 'View Admin',
       link: '/admin/get',

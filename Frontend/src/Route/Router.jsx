@@ -47,6 +47,7 @@ import AdminProfile from "../Components/Admin/AdminProfile";
 import PrintInvoice from "../Components/Invoice/PrintInvoice";
 import ViewCustomer from "../Components/Customer/ViewCustomer";
 import ViewProduct from "../Components/Product/ViewProduct";
+import AddEmployee from "../Components/Employee/AddEmployee";
 
 const router = createBrowserRouter([
   {
@@ -182,11 +183,23 @@ const router = createBrowserRouter([
 
       // For Employee
       {
+        path: 'employee/add',
+        element: <AddEmployee />
+      },
+      {
+        path: 'employee/get',
+        element: <GetEmployee />
+      },
+      {
+        path: 'employee/get/:id',
+        element: <UpdateEmployee />
+      },
+      {
         path: 'employee/update/:id',
         element: <UpdateEmployee />
       },
       {
-        path: 'employee/get',
+        path: 'employee/delete/:id',
         element: <GetEmployee />
       },
       {

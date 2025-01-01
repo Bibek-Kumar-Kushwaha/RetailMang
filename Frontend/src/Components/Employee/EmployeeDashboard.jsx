@@ -3,14 +3,14 @@ import DashboardLayout from '../../Layouts/DashboardLayout'
 
 const EmployeeDashboard = () => {
   const employeeSections = [
-    // {
-    //   name: 'Add Employee',
-    //   link: '/employee/add',
-    //   bgColor: 'bg-blue-500',
-    //   hoverColor: 'bg-blue-600',
-    //   icon: 'add',
-    //   action: 'Add New Employee',
-    // },
+    {
+      name: 'Add Employee',
+      link: '/employee/add',
+      bgColor: 'bg-blue-500',
+      hoverColor: 'bg-blue-600',
+      icon: 'add',
+      action: 'Add New Employee',
+    },
     // {
     //   name: 'Update Employee',
     //   link: '/employee/update',

@@ -1,27 +1,53 @@
 import mongoose from "mongoose";
 
 const employeeSchema = new mongoose.Schema({
+
     name: {
-        type: mongoose.Schema.ObjectId,
-        ref: 'User',
-        required: [true, "Provide Name"]
+        type: String,
+        required: [true, "Provide your Full Name"]
     },
-    role: {
-        type: mongoose.Schema.ObjectId,
-        ref: 'User',
-        required: [true, "Choose Role"]
-    },
-    salary: {
-        type: Number,
-        default: 0
-    },
-    phone: {
+    email: {
         type: String,
         default: null
     },
+    address: {
+        type: String,
+        default: null
+    },
+    password: {
+        type: String,
+        required: [true, "Provide Password"]
+    },
+    phone: {
+        type: String,
+        unique: true,
+        required: [true, "Provide phone number"]
+    },
+    role: {
+        type: String,
+        enum: ['SUBADMIN']
+    },
     joiningDate: {
         type: Date,
-        default: Date.now()
+        required: true
+    },
+    salary: {
+        type: Number,
+        required: true
+    },
+    credit: {
+        type: Number,
+        required: true
+    },
+    avatar: {
+        public_url: {
+            type: String,
+            default: null
+        },
+        secure_url: {
+            type: String,
+            default: null
+        }
     }
 },
     {
@@ -30,4 +56,5 @@ const employeeSchema = new mongoose.Schema({
 );
 
 const employeeModel = mongoose.model("Employee", employeeSchema);
+
 export default employeeModel;

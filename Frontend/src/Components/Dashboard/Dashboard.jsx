@@ -21,7 +21,7 @@ const Dashboard = () => {
     { name: 'Invoice', description: 'Generate and manage invoices', icon: '🧾', route: '/invoice/dashboard' },
     { name: 'Credit', description: 'Track and manage customer credits', icon: '💳', route: '/credit/dashboard' },
     { name: 'Supplier', description: 'Manage suppliers and orders', icon: '🚚', route: '/supplier/dashboard' },
-    { name: 'Employee', description: 'View and manage employee details', icon: '👨‍💼', route: '/employee/dashboard' },
+    // { name: 'Employee', description: 'View and manage employee details', icon: '👨‍💼', route: '/employee/dashboard' },
   ];
 
   return (
